@@ -26,6 +26,9 @@ function init() {
         index = 0;
       }
       
+    } else if (key === codes[0]) {
+      index = 1;
+      
     } else {
       index = 0;  
     }
