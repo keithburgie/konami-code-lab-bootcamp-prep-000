@@ -17,6 +17,7 @@ const alphabet = ['a', 'b', 'c'];
 
 function onKeyDownHandler(e) {
   const key = e.key;
+  console.log("initiated");
   
   document.body.addEventListener('keydown', function(e) {
   const key = e.key;
