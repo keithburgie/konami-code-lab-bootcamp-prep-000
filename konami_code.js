@@ -29,9 +29,10 @@ function onKeyDownHandler(e) {
     index = 0;
   }
 }
-onKeyDownHandler();
+//onKeyDownHandler();
 
-document.addEventListener('keydown', function(e) {
+const body = document.body;
+body.addEventListener('keydown', function(e) {
   const k = e.key;
   
   if (key === alphabet[index]) {
