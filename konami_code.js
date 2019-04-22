@@ -1,4 +1,4 @@
-const codes = [
+const buttons = [
   "ArrowUp",
   "ArrowUp",
   "ArrowDown",
@@ -17,17 +17,15 @@ function init() {
   // your code here
   document.body.addEventListener('keydown', function(e) {
     const key = e.key;
-    console.log(key);
 
-    if (key === codes[index]) {
-      console.log(index);
+    if (key === buttons[index]) {
       index++;
-      console.log(index);
-      if (index === codes.length) {
+
+      if (index === buttons.length) {
         alert("Hurray!");
         index = 0;
       }
-    } else if (key === codes[0]) {
+    } else if (key === buttons[0]) {
       index = 1;
       
     } else {
