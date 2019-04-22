@@ -13,6 +13,8 @@ const codes = [
 
 let index = 0;
 
+const alphabet = ['a', 'b', 'c'];
+
 function onKeyDownHandler(e) {
   const k = e.key;
   
