@@ -20,8 +20,9 @@ function init() {
     console.log(key);
 
     if (key === codes[index]) {
+      console.log(index);
       index++;
-
+      console.log(index);
       if (index === codes.length) {
         alert("Hurray!");
         index = 0;
