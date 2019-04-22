@@ -31,6 +31,10 @@ function onKeyDownHandler(e) {
 }
 onKeyDownHandler();
 
+document.addEventListener('onkeydown', function(e) {
+  
+});
+
 function init() {
   // your code here
 }
