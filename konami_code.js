@@ -13,47 +13,25 @@ const codes = [
 
 let index = 0;
 
-const alphabet = ['a', 'b', 'c'];
-
-function onKeyDownHandler(e) {
-  const key = e.key;
-  console.log("initiated");
-  
-  document.body.addEventListener('keydown', function(e) {
-  const key = e.key;
-  
-  if (key === alphabet[index]) {
-    index++;
-    
-    if (index === alphabet.length) {
-      alert("Hurray!");
-      index = 0;
-    }
-  } else {
-    index = 0;
-  }
-}
-onKeyDownHandler();
-
-/*
-const body = document.body;
-
-body.addEventListener('keydown', function(e) {
-  const key = e.key;
-  
-  if (key === alphabet[index]) {
-    index++;
-    
-    if (index === alphabet.length) {
-      alert("Hurray!");
-      index = 0;
-    }
-  } else {
-    index = 0;
-  }
-});
-*/
-
 function init() {
   // your code here
+  document.body.addEventListener('keydown', function(e) {
+    const key = e.key;
+
+    if (key === codes[index]) {
+      index++;
+
+      if (index === codes.length) {
+        alert("Hurray!");
+        index = 0;
+      }
+    } else if (key === codes[0]) {
+      index = 1;
+      
+    } else {
+      index = 0;  
+    }
+  });
 }
+
+init();
