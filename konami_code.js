@@ -31,7 +31,7 @@ function onKeyDownHandler(e) {
 }
 //onKeyDownHandler();
 
-const body = document.window;
+const body = document.body;
 
 body.addEventListener('keydown', function(e) {
   const key = e.key;
