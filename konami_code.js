@@ -19,7 +19,7 @@ function init() {
 
     if (key === codes[index]) {
       index++;
-      console.log(`(${index} of ${codes.length}). ${key}`);
+      console.log(`(${key}`);
 
       if (index === codes.length) {
         alert("Hurray!");
