@@ -32,8 +32,9 @@ function onKeyDownHandler(e) {
 //onKeyDownHandler();
 
 const body = document.body;
+
 body.addEventListener('keydown', function(e) {
-  const k = e.key;
+  const key = e.key;
   
   if (key === alphabet[index]) {
     index++;
