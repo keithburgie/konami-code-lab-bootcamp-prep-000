@@ -44,7 +44,6 @@ document.addEventListener('keydown', function(e) {
   } else {
     index = 0;
   }
-}
 });
 
 function init() {
