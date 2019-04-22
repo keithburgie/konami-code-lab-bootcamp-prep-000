@@ -16,7 +16,10 @@ let index = 0;
 const alphabet = ['a', 'b', 'c'];
 
 function onKeyDownHandler(e) {
-  const k = e.key;
+  const key = e.key;
+  
+  document.body.addEventListener('keydown', function(e) {
+  const key = e.key;
   
   if (key === alphabet[index]) {
     index++;
@@ -29,7 +32,7 @@ function onKeyDownHandler(e) {
     index = 0;
   }
 }
-//onKeyDownHandler();
+onKeyDownHandler();
 
 /*
 const body = document.body;
