@@ -20,7 +20,7 @@ function init() {
 
     if (key === buttons[index]) {
       index++;
-      console.log(`${buttons[index]}. ${key}`);
+      console.log(`${index}. ${key}`);
 
       if (index === buttons.length) {
         alert("Hurray!");
