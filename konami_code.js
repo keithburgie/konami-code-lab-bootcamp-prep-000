@@ -26,10 +26,10 @@ function init() {
         alert("Hurray!");
         index = 0;
       }
-    } /*else if (key === buttons[0]) {
+    } else if (key === buttons[0]) {
       index = 1;
       
-    }*/ else {
+    } else {
       index = 0;  
     }
   });
