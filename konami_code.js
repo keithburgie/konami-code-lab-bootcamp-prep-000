@@ -14,26 +14,23 @@ const codes = [
 let index = 0;
 
 function init() {
-  // your code here
   document.body.addEventListener('keydown', function(e) {
     const key = e.key;
 
     if (key === codes[index]) {
       index++;
-      console.log(`${index}. ${key}`);
+      console.log(`(${index} of ${codes.length}). ${key}`);
 
       if (index === codes.length) {
         alert("Hurray!");
         index = 0;
       }
-      else if (key === codes[0]) {
-        index = 1;
-    } 
       
-    } else {
+      else if (key === codes[0]) {
+      index = 1;
+      
+    }  else {
       index = 0;  
     }
   });
 }
-
-init();
